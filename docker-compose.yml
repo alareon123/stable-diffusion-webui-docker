@@ -29,8 +29,6 @@ services:
     profiles: ["auto"]
     build: ./services/AUTOMATIC1111
     image: sd-auto:78
-    volumes:
-      - ./sd-models:/stable-diffusion-webui/models  # Монтирование модели в контейнер
     environment:
       - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api --share
 
