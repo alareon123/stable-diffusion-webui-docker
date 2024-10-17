@@ -15,7 +15,7 @@ mkdir -vp /data/.cache \
 
   echo "Copying models from sd-models..."
 # Копируем содержимое папки sd-models в папку Stable-diffusion
-cp -vr /path/to/sd-models/* /data/models/Stable-diffusion/
+cp -vr ./sd-models/* /data/models/Stable-diffusion/
 
 echo "Downloading, this might take a while..."
 
