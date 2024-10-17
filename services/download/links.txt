@@ -1,2 +1,10 @@
 https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
   out=Stable-diffusion/v1-5-pruned-emaonly.ckpt
+http://62.68.147.136:8080/ponyDiffusionV6XL_v6StartWithThisOne.safetensors
+http://62.68.147.136:8080/darkSushi25D25D_v40.safetensors
+http://62.68.147.136:8080/Put Stable Diffusion checkpoints here.txt
+http://62.68.147.136:8080/chilloutmix_NiPrunedFp32Fix.json
+http://62.68.147.136:8080/01-local/02-dreamshaper_xl_2.1_turbo.safetensors
+http://62.68.147.136:8080/01-local/01-juggernaut_xl_v9.safetensors
+http://62.68.147.136:8080/v1-5-pruned-emaonly.safetensors
+http://62.68.147.136:8080/chilloutmix_NiPrunedFp32Fix.safetensors
