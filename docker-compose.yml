@@ -4,7 +4,6 @@ x-base_service: &base_service
     volumes:
       - &v1 ./data:/data
       - &v2 ./output:/output
-      - - ./data/models/Stable-diffusion:/stable-diffusion-webui/models/Stable-diffusion  # Добавляем монтирование для моделей
     stop_signal: SIGKILL
     tty: true
     deploy:
@@ -28,6 +27,8 @@ services:
   auto: &automatic
     <<: *base_service
     profiles: ["auto"]
+    volumes:
+       - ./data/models/Stable-diffusion:/stable-diffusion-webui/models/Stable-diffusion  # Добавляем монтирование для моделей
     build: ./services/AUTOMATIC1111
     image: sd-auto:78
     environment:
