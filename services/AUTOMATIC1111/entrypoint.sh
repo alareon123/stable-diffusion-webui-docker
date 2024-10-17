@@ -23,11 +23,11 @@ if [ ! -f /data/config/auto/styles.csv ]; then
   touch /data/config/auto/styles.csv
 fi
 
-# copy models from original models folder
-mkdir -p /data/models/VAE-approx/ /data/models/karlo/
-
-rsync -a --info=NAME ${ROOT}/models/VAE-approx/ /data/models/VAE-approx/
-rsync -a --info=NAME ${ROOT}/models/karlo/ /data/models/karlo/
+## copy models from original models folder
+#mkdir -p /data/models/VAE-approx/ /data/models/karlo/
+#
+#rsync -a --info=NAME ${ROOT}/models/VAE-approx/ /data/models/VAE-approx/
+#rsync -a --info=NAME ${ROOT}/models/karlo/ /data/models/karlo/
 
 declare -A MOUNTS
 
