@@ -33,7 +33,6 @@ COPY ./stable-diffusion-webui-master /stable-diffusion-webui
 # Переходим в директорию проекта и выполняем установку зависимостей
 WORKDIR /stable-diffusion-webui
 RUN --mount=type=cache,target=/root/.cache/pip \
-  git reset --hard v1.9.4 && \
   pip install -r requirements_versions.txt
 
 
