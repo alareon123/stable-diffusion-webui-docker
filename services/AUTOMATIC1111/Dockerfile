@@ -2,7 +2,11 @@ FROM alpine/git:2.36.2 as download
 
 COPY clone.sh /clone.sh
 
-RUN git config --global http.postBuffer 524288000
+# Увеличение буфера для Git и настройка тайм-аута
+RUN git config --global http.postBuffer 1048576000 && \
+    git config --global http.lowSpeedLimit 0 && \
+    git config --global http.lowSpeedTime 999 && \
+    git config --global pack.threads "1"
 
 RUN . /clone.sh stable-diffusion-webui-assets https://github.com/AUTOMATIC1111/stable-diffusion-webui-assets.git 6f7db241d2f8ba7457bac5ca9753331f0c266917
 
