@@ -22,6 +22,7 @@ services:
     profiles: ["download"]
     volumes:
       - *v1
+      - ~/sd-models:/tmp/sd-models
 
   auto: &automatic
     <<: *base_service
