@@ -13,10 +13,6 @@ mkdir -vp /data/.cache \
   /data/models/LDSR \
   /data/models/VAE
 
-  echo "Copying models from sd-models..."
-# Копируем содержимое папки sd-models в папку Stable-diffusion
-cp -vr ./sd-models/* /data/models/Stable-diffusion/
-
 echo "Downloading, this might take a while..."
 
 aria2c -x 10 --disable-ipv6 --input-file /docker/links.txt --dir /data/models --continue
