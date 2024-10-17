@@ -35,6 +35,8 @@ WORKDIR /stable-diffusion-webui
 RUN --mount=type=cache,target=/root/.cache/pip \
   pip install -r requirements_versions.txt
 
+# Обновление typing_extensions
+RUN pip install --upgrade typing_extensions
 
 ENV ROOT=/stable-diffusion-webui
 
