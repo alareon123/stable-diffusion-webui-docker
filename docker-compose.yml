@@ -30,7 +30,7 @@ services:
     build: ./services/AUTOMATIC1111
     image: sd-auto:78
     environment:
-      - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api --ckpt /data/models/Stable-diffusion/ponyDiffusionV6XL_v6StartWithThisOne.safetensors
+      - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api --ckpt /stable-diffusion-webui/models/Stable-diffusion/ponyDiffusionV6XL_v6StartWithThisOne.safetensors
 
   auto-cpu:
     <<: *automatic
