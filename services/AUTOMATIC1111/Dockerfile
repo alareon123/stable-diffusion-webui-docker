@@ -28,7 +28,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
 
 WORKDIR /
 # Копируем локальный репозиторий в контейнер
-COPY ./services/AUTOMATIC1111/stable-diffusion-webui-master /stable-diffusion-webui
+COPY ./stable-diffusion-webui-master /stable-diffusion-webui
 
 # Переходим в директорию проекта и выполняем установку зависимостей
 WORKDIR /stable-diffusion-webui
