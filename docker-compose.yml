@@ -4,6 +4,7 @@ x-base_service: &base_service
     volumes:
       - &v1 ./data:/data
       - &v2 ./output:/output
+      - - ./data/models/Stable-diffusion:/stable-diffusion-webui/models/Stable-diffusion  # Добавляем монтирование для моделей
     stop_signal: SIGKILL
     tty: true
     deploy:
