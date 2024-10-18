@@ -56,6 +56,9 @@ ENV LD_PRELOAD=libtcmalloc.so
 
 COPY . /docker
 
+# Копируем модели из папки sd-models в папку моделей внутри контейнера
+COPY ./sd-models /stable-diffusion-webui/models/Stable-diffusion/
+
 RUN \
   # mv ${ROOT}/style.css ${ROOT}/user.css && \
   # one of the ugliest hacks I ever wrote \
