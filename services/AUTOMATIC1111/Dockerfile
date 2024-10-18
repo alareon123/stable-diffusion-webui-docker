@@ -57,7 +57,7 @@ ENV LD_PRELOAD=libtcmalloc.so
 COPY . /docker
 
 # Копируем модели из папки sd-models в папку моделей внутри контейнера
-RUN ls
+RUN ls .
 COPY /data/models/Stable-diffusion /stable-diffusion-webui/models/Stable-diffusion/
 
 RUN \
